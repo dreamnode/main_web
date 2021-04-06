@@ -25,7 +25,7 @@ SECRET_KEY = 'gtuogp53pn_y)^+&0r=^_epnah1jt^7-y4qcmqp&v!bduqg32#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dreamnodetest.herokuapp.com']
 
 
 # Application definition
