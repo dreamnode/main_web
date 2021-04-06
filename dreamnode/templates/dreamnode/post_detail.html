@@ -1,0 +1,35 @@
+{% extends "dreamnode/bases.html" %}
+{% load static %}
+{% block content %}
+    <header class="masthead" style="background-image:url('{{ object.image_main.url }}');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="post-heading">
+                        <h1>{{ object.title }}</h1>
+                        <h2 class="subheading">{{ object.short_content }}</h2><span class="meta">Posted by&nbsp;<a href="#">{{ object.author }}</a>&nbsp;<{{ object.date_posted|date:"F d, Y" }}</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+
+                    <h2 class="section-heading">Heading</h2>
+                   
+                   
+                        <p>{{object.content}}.</p>
+                        <h2 class="section-heading">Reaching for the Stars</h2>
+                       <a href="#"><img class="img-fluid" src="{{ object.image_other.url }}"></a><span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    
+                        <p>{{object.content_main}}</p>
+                      
+                </div>
+            </div>
+        </div>
+    </article>
+
+{% endblock content %}

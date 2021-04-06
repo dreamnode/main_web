@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Social Stereotype</title>
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/fonts/fontawesome5-overrides.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/css/Brands.css' %}">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/css/Competences-Grid---3-Columns---Hover-Effect-Pop---Icons.css' %}">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/css/Projects-Horizontal.css' %}">
+    <link rel="stylesheet" href="{% static 'dreamnode/assets2/css/Team-Boxed.css' %}">
+<style type="text/css">
+    .btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 26px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+.btn a:hover{
+color: white;
+}
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="{% url 'dreamnode' %}">Dream Node</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'social_stereotype' %}">social stereotype</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'blog-home' %}">blog</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'dreamnode' %}">services</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('{% static 'dreamnode/assets2/img/home-bg.jpg' %}');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="site-heading">
+                        <h1>SOCIAL STEREOTYPE</h1><span class="subheading">Making a difference</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="text-align: center;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 competencesboxes"><i class="fas fa-cube competencesicons"></i>
+                    <h1 class="competencestitles"><strong>What are we?</strong></h1>
+                    <p class="competencesparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><i class="far fa-square squareicons"></i></div>
+                <div class="col-md-4 competencesboxes"><i class="fas fa-people-carry competencesicons"></i>
+                    <h1 class="competencestitles"><strong>What do we do?&nbsp;</strong></h1>
+                    <p class="competencesparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><i class="far fa-square squareicons"></i></div>
+                <div class="col-md-4 competencesboxes"><i class="fas fa-calendar-alt competencesicons"></i>
+                    <h1 class="competencestitles"><strong>Programs</strong></h1>
+                    <p class="competencesparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p><i class="far fa-square squareicons"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="brands"><a href="#"> <img src="{% static 'dreamnode/assets2/img/instacart.png' %}"><img src="{% static 'dreamnode/assets2/img/kickstarter.png' %}"><img src="{% static 'dreamnode/assets2/img/lyft.png' %}"><img src="{% static 'dreamnode/assets2/img/shopify.png' %}"><img src="{% static 'dreamnode/assets2/img/pinterest.png' %}"><img src="{% static 'dreamnode/assets2/img/twitter.png' %}"></a></div>
+
+
+    <!--
+
+PREVIOUS EVENTS
+BEGINING
+    -->
+ <div class="projects-horizontal">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Previous Events</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5">
+   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zOTS1zZzK5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                        <div class="col">
+                            <h3 class="name">300 Seconds of unburden</h3>
+                            <p class="description">
+                                Meet Diana as she share her experience on the toxic
+                                society we live in. 
+                            </p>
+                            <div>
+                                <button class="btn"><a href="https://youtu.be/zOTS1zZzK5U">Watch on youtube</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FuekGwVQY_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                            <div>
+                                <button class="btn"><a href="https://youtu.be/FuekGwVQY_A">Watch on youtube</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FuekGwVQY_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                            <div>
+                                <button class="btn"><a href="https://youtu.be/FuekGwVQY_A">Watch on youtube</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5">
+                       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FuekGwVQY_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                             <div>
+                                <button class="btn"><a href="https://youtu.be/FuekGwVQY_A">Watch on youtube</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+
+
+END OF PREVIOUS PROJECT
+
+    -->
+
+
+    <div class="projects-horizontal">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Upcoming Events</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'dreamnode/assets2/img/desk.jpg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'dreamnode/assets2/img/building.jpg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'dreamnode/assets2/img/loft.jpg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'dreamnode/assets2/img/minibus.jpeg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="team-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Team </h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="{% static 'dreamnode/assets2/img/1.jpg' %}">
+                        <h3 class="name">Ben Johnson</h3>
+                        <p class="title">Musician</p>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="{% static 'dreamnode/assets2/img/2.jpg' %}">
+                        <h3 class="name">Emily Clark</h3>
+                        <p class="title">Artist</p>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="{% static 'dreamnode/assets2/img/3.jpg' %}">
+                        <h3 class="name">Carl Kent</h3>
+                        <p class="title">Stylist</p>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
+
+                    </ul>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Brand 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'dreamnode/assets2/js/jquery.min.js' %}"></script>
+    <script src="{% static 'dreamnode/assets2/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'dreamnode/assets2/js/clean-blog.js' %}"></script>
+</body>
+
+</html>
