@@ -20,12 +20,12 @@ class PostListView(ListView):
 def dreamnode (request):
 	our_works = our_work.objects.all()
 	context = {
-	'work1':our_works[1],
-	'work2':our_works[2],
-	'work3':our_works[3],
-	'work4':our_works[4],
-	'work5':our_works[5],
-	'work6':our_works[6],
+	'work1':our_works[0],
+	'work2':our_works[1],
+	'work3':our_works[2],
+	'work4':our_works[3],
+	'work5':our_works[4],
+	'work6':our_works[5],
 	}
 	if request.method == 'POST':
 		forms = ContactFormEmail(request.POST)
