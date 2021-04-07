@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -78,11 +79,14 @@ WSGI_APPLICATION = 'dreamnode_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dd7o6hrv3j2c8k',
+        'HOST':'ec2-54-162-119-125.compute-1.amazonaws.com',
+        'PORT':5432,
+        'USER':'hrzhhdjeeutjan',
+        'PASSWORD':'0a509ee2440fd3fab0f71a27e0a64dd541d4a101b4414bf826ff4a0101f3cfe6',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
