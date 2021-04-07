@@ -136,6 +136,6 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_HOST_USER = 'dreamnodeinc@gmail.com'
 
-EMAIL_HOST_PASSWORD = 'balance diet'
+EMAIL_HOST_PASSWORD = 'balancediet'
 
 django_heroku.settings(locals())
