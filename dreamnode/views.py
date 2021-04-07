@@ -33,6 +33,7 @@ def dreamnode (request):
 			fromemail = forms.cleaned_data['from_email']
 			subject = forms.cleaned_data['subject']
 			message = forms.cleaned_data['message']
+			print(message)
 			send_mail(subject,message,fromemail,['attehkayode2@gmail.com'],fail_silently=True)
 		return redirect('dreamnode')
 
