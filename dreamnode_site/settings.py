@@ -163,10 +163,10 @@ AWS_S3_REGION_NAME = "EU (Paris) eu-west-3"
 DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
-STATIC_LOCATION = "resources/"
-MEDIA_LOCATION = "media/"
-STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATIC_LOCATION}"
-MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/"
+#STATIC_LOCATION = "resources/"
+#MEDIA_LOCATION = "media/"
+#STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATIC_LOCATION}"
+#MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/"
 
 django_heroku.settings(locals())
 
