@@ -120,16 +120,16 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
+ 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#sSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #STATIC_URL = '/static/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 #MEDIA_URL = 'media/'
 
 
@@ -149,26 +149,27 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS= {'CacheControl':'max-age=86400'}
 
 
 
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
+#AWS_S3_FILE_OVERWRITE = False
 AWS_BUCKET_ACL = "public-read"
-AWS_QUERYSTRING_AUTH = False
-AWS_S3_REGION_NAME = "eu-west-3"
+#AWS_QUERYSTRING_AUTH = False
+AWS_LOCATION = 'static'
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR, 'static'),
+]
 
-
-DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+DEFAULT_FILE_STORAGE = 'dreamnode_site.storages.MediaStore'
 STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN,AWS_LOCATION)
 
-#STATIC_LOCATION = "resources/"
-#MEDIA_LOCATION = "media/"
-#STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATIC_LOCATION}"
-#MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/"
 
-django_heroku.settings(locals())
+
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#django_heroku.settings(locals())
 
 
 
