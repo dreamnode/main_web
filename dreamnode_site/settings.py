@@ -164,7 +164,7 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = 'public-read'
 AWS_S3_REGION_NAME = 'eu-west-3' #change to your region
 AWS_S3_SIGNATURE_VERSION = 's3v4'
-AWS_QUERYSTRING_AUTH = False
+
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 '''

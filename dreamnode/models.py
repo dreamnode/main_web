@@ -27,6 +27,7 @@ class branding(models.Model):
 
     def __str__(self):
         return self.title
+
 class ads(models.Model):
     title = models.CharField(max_length=100)
     brief = models.CharField(max_length=100)
@@ -39,7 +40,20 @@ class ads(models.Model):
 
     def __str__(self):
         return self.title
+        
 class dreamnode_social(models.Model):
+    title = models.CharField(max_length=100)
+    brief = models.CharField(max_length=100)
+    content = models.TextField()
+    img_works = models.ImageField(default='default.jpg', upload_to='pictures')
+    thumb_img = models.ImageField(default='default_thumb.jpg', upload_to='pictures')
+    client = models.CharField(max_length=50)
+    category = models.CharField(max_length=100)
+    date = models.CharField(max_length=40)
+
+    def __str__(self):
+        return self.title
+class others(models.Model):
     title = models.CharField(max_length=100)
     brief = models.CharField(max_length=100)
     content = models.TextField()
