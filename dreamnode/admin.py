@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import our_work, Post,branding,ads,dreamnode_social,other
+from .models import our_work, Post,branding,ads,dreamnode_social,others
 
 
 admin.site.register(our_work)
